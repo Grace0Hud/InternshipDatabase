@@ -23,9 +23,10 @@ CREATE TABLE internships
 );
 
 INSERT INTO companies VALUES
-('test', 'test', 'test', 4322221);
+('test1', 'test', 'test', 4322221),
+('test3', 'test', 'test', 7890890);
 
-.print 'Companies'
+.print 'COMPANIES'
 SELECT * FROM companies;
 
 /*datetime("now","localtime") gets the local time*/
@@ -35,19 +36,22 @@ INSERT INTO internships VALUES
 ('c', 'test3', datetime('2021-01-04'), 42, 'test', 4.33);
 
 .print
+.print 'INTERNSHIPS'
+SELECT * FROM internships;
 /*list all the positions chronologically by application deadline*/
-.print 'Internships'
+.print
+.print 'INTERNSHIPS BY DEADLINE'
 SELECT * FROM internships
 ORDER BY deadline;
 
 /*ability to search by company for available internships.*/
 .print
-.print 'Internships from Test1'
+.print 'TEST 1 INTERNSHIPS'
 SELECT * FROM internships
 WHERE company_name='test1';
 
 /*designed query - by pay */
 .print
-.print 'Sorted by highest pay'
+.print 'INTERNSHIPS BY PAY (DESC)'
 SELECT position, company_name, pay FROM internships
 ORDER BY pay DESC;
