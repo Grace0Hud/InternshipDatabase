@@ -31,8 +31,8 @@ SELECT * FROM companies;
 /*datetime("now","localtime") gets the local time*/
 INSERT INTO internships VALUES
 ('a', 'test1', datetime('2021-01-14'), 42, 'test', 2.33),
-('b', 'test1', datetime('2021-01-17'), 42, 'test', 2.33),
-('c', 'test3', datetime('2021-01-04'), 42, 'test', 2.33);
+('b', 'test1', datetime('2021-01-17'), 42, 'test', 23.33),
+('c', 'test3', datetime('2021-01-04'), 42, 'test', 4.33);
 
 .print
 /*list all the positions chronologically by application deadline*/
@@ -41,6 +41,13 @@ SELECT * FROM internships
 ORDER BY deadline;
 
 /*ability to search by company for available internships.*/
+.print
 .print 'Internships from Test1'
 SELECT * FROM internships
 WHERE company_name='test1';
+
+/*designed query - by pay */
+.print
+.print 'Sorted by highest pay'
+SELECT position, company_name, pay FROM internships
+ORDER BY pay DESC;
