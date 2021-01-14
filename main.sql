@@ -28,9 +28,13 @@ INSERT INTO companies VALUES
 .print 'Companies'
 SELECT * FROM companies;
 
+/*datetime("now","localtime") gets the local time*/
 INSERT INTO internships VALUES
-('test', 'test', 'test', 42, 'test', 2.33);
+('a', 'test', datetime('2021-01-14'), 42, 'test', 2.33),
+('b', 'test', datetime('2021-01-17'), 42, 'test', 2.33),
+('c', 'test', datetime('2021-01-04'), 42, 'test', 2.33);
 
 .print
 .print 'Internships'
-SELECT * FROM internships;
+SELECT * FROM internships
+ORDER BY deadline;
