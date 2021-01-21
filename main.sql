@@ -25,7 +25,10 @@ CREATE TABLE internships
 INSERT INTO companies VALUES
 ('SoCal Edison', 'Rosemead California', 'Power', '18006554555'),
 ('Dropbox', 'San Fransisco, CA', 'remote collaboration', 'https://www.dropbox.com/support'),
-('American Express', 'Remote', 'banking', 'Recruitment.Support.Americas@aexp.com');
+('American Express', 'Remote', 'banking', 'Recruitment.Support.Americas@aexp.com'),
+('Fivestars', 'San Francisco, CA', 'customer loyalty programs', 'NA'),
+('VMWare', 'Palo Alto, CA', 'Virtual Machines', 'careers@vmware.com'),
+('Amazon', 'Moreno Valley, CA', 'shipping', 'NA');
 
 .print 'COMPANIES'
 SELECT * FROM companies;
@@ -34,7 +37,10 @@ SELECT * FROM companies;
 INSERT INTO internships VALUES
 ('IT-Cyber', 'SoCal Edison', '2021-03', 183, 'https://www.edisoncareers.com/ShowJob/Id/1013139/2021%20Summer%20Internship%20%20%20IT%20(Cybersecurity)', 0.00),
 ('Launch Internship', 'Dropbox', '2021-06', null, 'https://www.dropbox.com/jobs/listing/2309960?gh_jid=2309960&gh_src=b946fd9d1us', 404),
-('Campus Recruitment - Technology', 'American Express', '2021-01-04', 70, 'https://jobs.americanexpress.com/global/jobs/20006515?lang=en-us&src=JB-10780&utm_source=Indeed&utm_medium=organic&utm_campaign=Indeed', 0.00);
+('Campus Recruitment - Technology', 'American Express', '2021-06', 70, 'https://jobs.americanexpress.com/global/jobs/20006515?lang=en-us&src=JB-10780&utm_source=Indeed&utm_medium=organic&utm_campaign=Indeed', 0.00),
+('Software Engineer Intern', 'Fivestars', '2021-06', 91, 'https://www.fivestars.com/careers/?gh_jid=2324334', 404),
+('Core Graphics Technical Team', 'VMWare', 'soon?', 0, 'https://careers.vmware.com/main/jobs/R2011142?lang=en-us&source=LIPJ', 0),
+('IT Support Engineer', 'Amazon', '2021-06', 70, 'https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=133043&s=58&guid=000001772349aaab9b37a77ffa964f77&src=GD_JOB_VIEW&t=SR&vt=w&cs=1_21f52a37&cb=1611204767081&jobListingId=3771134124', 404);
 
 .print '------------------------------------------------'
 .print
