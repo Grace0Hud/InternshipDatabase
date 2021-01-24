@@ -64,7 +64,7 @@ ORDER BY deadline;
 /*ability to search by company for available internships.*/
 .print '------------------------------------------------'
 .print
-.print 'TEST 1 INTERNSHIPS'
+.print 'SOUTHERN CALIFORNIA EDISON INTERNSHIPS'
 SELECT * FROM internships
 WHERE company_name='SoCal Edison';
 
@@ -72,5 +72,5 @@ WHERE company_name='SoCal Edison';
 .print '------------------------------------------------'
 .print
 .print 'INTERNSHIPS BY PAY (DESC)'
-SELECT position, company_name, pay FROM internships
-ORDER BY pay DESC;
+SELECT position, company_name, duration_days FROM internships
+ORDER BY duration_days DESC;
